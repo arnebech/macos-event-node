@@ -25,5 +25,5 @@ Run `npm run build-binary` to build the binary. This requires certain build tool
 
 #### Native addon
 
-I looked into using Node-API for building a native addon for this, but ran into problems with conflicting runloops. In order to get the above notifications it seemed that the native addon must run the native runloop which would block the node js runloop. If runnint the native runloop in a new thread, it does not seem to get the notifcations we care about.
+I looked into using Node-API for building a native addon for this, but ran into problems with conflicting runloops. In order to get the above notifications it seemed that the native addon must run the native runloop which would block the node js runloop. If running the native runloop in a new thread (e.g. not the main thread), it does not seem to get the notifcations we care about.
 
