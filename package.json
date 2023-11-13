@@ -1,0 +1,15 @@
+{
+  "name": "macos-events",
+  "version": "0.0.1",
+  "description": "Get MacOS native events in node",
+  "main": "macos-events.js",
+  "author": "Arne Bech",
+  "license": "private",
+  "private": true,
+  "scripts": {
+    "build-binary": "swiftc event-emitter/event-emitter.swift -o event-emitter/event-emitter-bin",
+    "run-event-emitter": "event-emitter/event-emitter-bin"
+  },
+  "dependencies": {
+  }
+}
